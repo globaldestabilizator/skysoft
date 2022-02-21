@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100%;
+    --header-height: 48px;
+}
+
+header,
+footer {
+    height: var(--header-height);
+    border: 1px solid black;
+    background-color: aliceblue
+}
+
+.body__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: calc(100% - var(--header-height) - var(--header-height));
+    flex: 1;
+}
+
+.side__block {
+    width: 248px;
+    border: 1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+    background-color: aliceblue
+}
+
+.content {
+    width: 100%;
+}
